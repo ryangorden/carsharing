@@ -1,10 +1,89 @@
-[{"id": 1, "size": "s", "fuel": "gas", "doors": "3", "transmission": "auto"},
-    {"id": 2, "size": "s", "fuel": "ele", "doors": "3", "transmission": "auto"},
-    {"id": 3, "size": "s", "fuel": "gas", "doors": "5", "transmission": "manual"},
-    {"id": 4, "size": "m", "fuel": "ele", "doors": "3", "transmission": "auto"},
-    {"id": 5, "size": "m", "fuel": "hyb", "doors": "5", "transmission": "auto"},
-    {"id": 6, "size": "m", "fuel": "gas", "doors": "3", "transmission": "manual"},
-    {"id": 7, "size": "l", "fuel": "dies", "doors": "5", "transmission": "manual"},
-    {"id": 8, "size": "l", "fuel": "ele", "doors": "5", "transmission": "auto"},
-    {"id": 9, "size": "l", "fuel": "hyb", "doors": "5", "transmission": "auto"}
-      ]
+[
+    {
+        "size": "s",
+        "fuel": "gas",
+        "doors": 3,
+        "transmission": "auto",
+        "id": 1,
+        "trips": []
+    },
+    {
+        "size": "s",
+        "fuel": "ele",
+        "doors": 3,
+        "transmission": "auto",
+        "id": 2,
+        "trips": []
+    },
+    {
+        "size": "s",
+        "fuel": "gas",
+        "doors": 5,
+        "transmission": "manual",
+        "id": 3,
+        "trips": []
+    },
+    {
+        "size": "m",
+        "fuel": "ele",
+        "doors": 3,
+        "transmission": "auto",
+        "id": 4,
+        "trips": []
+    },
+    {
+        "size": "m",
+        "fuel": "hyb",
+        "doors": 5,
+        "transmission": "auto",
+        "id": 5,
+        "trips": []
+    },
+    {
+        "size": "m",
+        "fuel": "gas",
+        "doors": 3,
+        "transmission": "manual",
+        "id": 6,
+        "trips": []
+    },
+    {
+        "size": "l",
+        "fuel": "dies",
+        "doors": 5,
+        "transmission": "manual",
+        "id": 7,
+        "trips": []
+    },
+    {
+        "size": "l",
+        "fuel": "ele",
+        "doors": 5,
+        "transmission": "auto",
+        "id": 8,
+        "trips": []
+    },
+    {
+        "size": "l",
+        "fuel": "hyb",
+        "doors": 5,
+        "transmission": "auto",
+        "id": 9,
+        "trips": []
+    },
+    {
+        "size": "xs",
+        "fuel": "gas",
+        "doors": 1,
+        "transmission": "auto",
+        "id": 10,
+        "trips": [
+            {
+                "start": 0,
+                "end": 1000,
+                "description": "road trip",
+                "id": 1
+            }
+        ]
+    }
+]
