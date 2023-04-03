@@ -1,19 +1,11 @@
 from fastapi import FastAPI, HTTPException
+from schemas import load_db
 import uvicorn
 
 
 app = FastAPI()
 
-db = [{"id": 1, "size": "s", "fuel": "gas", "doors": "3", "transmission": "auto"},
-    {"id": 2, "size": "s", "fuel": "ele", "doors": "3", "transmission": "auto"},
-    {"id": 3, "size": "s", "fuel": "gas", "doors": "5", "transmission": "manual"},
-    {"id": 4, "size": "m", "fuel": "ele", "doors": "3", "transmission": "auto"},
-    {"id": 5, "size": "m", "fuel": "hyb", "doors": "5", "transmission": "auto"},
-    {"id": 6, "size": "m", "fuel": "gas", "doors": "3", "transmission": "manual"},
-    {"id": 7, "size": "l", "fuel": "dies", "doors": "5", "transmission": "manual"},
-    {"id": 8, "size": "l", "fuel": "ele", "doors": "5", "transmission": "auto"},
-    {"id": 9, "size": "l", "fuel": "hyb", "doors": "5", "transmission": "auto"},
-      ]
+db = load_db()
 
 
 
@@ -29,15 +21,15 @@ db = [{"id": 1, "size": "s", "fuel": "gas", "doors": "3", "transmission": "auto"
 def get_cars(doors: int|None = None, size: str|None = None) -> list:
     result = db
     if size:
-        result= [car for car in db if car["size"] == size]
+        result= [car for car in db if car.size == size]
     if doors:
-        result= [car for car in db if int(car["doors"]) >= int(doors)]
+        result= [car for car in db if int(car.doors) >= int(doors)]
     return result
 
 @app.get("/api/cars/{id}")
 def car_by_id(id: int)-> dict:
     
-    result = [car for car in db if car["id"] == id]
+    result = [car for car in db if car.id == id]
     if result:
         return result[0]
     else:
