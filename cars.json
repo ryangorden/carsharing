@@ -1,0 +1,10 @@
+[{"id": 1, "size": "s", "fuel": "gas", "doors": "3", "transmission": "auto"},
+    {"id": 2, "size": "s", "fuel": "ele", "doors": "3", "transmission": "auto"},
+    {"id": 3, "size": "s", "fuel": "gas", "doors": "5", "transmission": "manual"},
+    {"id": 4, "size": "m", "fuel": "ele", "doors": "3", "transmission": "auto"},
+    {"id": 5, "size": "m", "fuel": "hyb", "doors": "5", "transmission": "auto"},
+    {"id": 6, "size": "m", "fuel": "gas", "doors": "3", "transmission": "manual"},
+    {"id": 7, "size": "l", "fuel": "dies", "doors": "5", "transmission": "manual"},
+    {"id": 8, "size": "l", "fuel": "ele", "doors": "5", "transmission": "auto"},
+    {"id": 9, "size": "l", "fuel": "hyb", "doors": "5", "transmission": "auto"}
+      ]
